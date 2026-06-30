@@ -1,0 +1,64 @@
+# Redrob Hackathon — Submission Metadata Template
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "ScoutIQ"
+
+primary_contact:
+  name: "YOUR NAME"
+  email: "YOUR EMAIL" 
+  phone: "YOUR PHONE"
+
+team_members:
+  - name: "YOUR NAME"
+    email: "YOUR EMAIL"
+    role: "AI Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
+
+sandbox_link: "YOUR_COLAB_OR_HUGGINGFACE_LINK"
+
+reproduce_command: "python ranking_pipeline.py --jd indiarun/indiarun/job_description.txt --candidates candidates.jsonl"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 2
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "ScoutIQ IDE (Gemini)"
+
+ai_usage_summary: |
+  Used the ScoutIQ Agent to pair-program the semantic pipeline, optimize the SentenceTransformer batch encoding, and write the business-logic trap checks.
+
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  Pure Semantic Capability Matching engine. Extract candidate career_history descriptions and batch-encode them using all-MiniLM-L6-v2 to evaluate Cosine Similarity against JD requirements (50%). Mixed with behavioral signals (25%), experience math (20%), and location (5%). Applies strict multiplicative penalties for Job Hoppers, "IT Services" traps, and Honeypot accounts using math heuristics. Processes 100K candidates in under 5 minutes on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
