@@ -22,7 +22,7 @@ github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
 
 sandbox_link: "YOUR_COLAB_OR_HUGGINGFACE_LINK"
 
-reproduce_command: "python ranking_pipeline.py --jd indiarun/indiarun/job_description.txt --candidates candidates.jsonl"
+reproduce_command: "python ranking_pipeline.py --jd job_description.txt --candidates candidates.jsonl"
 
 # ============================================================================
 # Compute environment

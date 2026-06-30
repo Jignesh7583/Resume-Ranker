@@ -35,7 +35,7 @@ pip install -r requirements.txt
 To reproduce the submission exactly from the candidates file, run the following single command:
 
 ```bash
-python ranking_pipeline.py --jd indiarun/indiarun/job_description.txt --candidates candidates.jsonl
+python ranking_pipeline.py --jd job_description.txt --candidates candidates.jsonl
 ```
 
 ### Pre-computation Note:
