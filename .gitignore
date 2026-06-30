@@ -9,7 +9,7 @@ env/
 
 # Do NOT upload massive data files to GitHub
 candidates.jsonl
-*.csv
+
 *.zip
 
 # Ignore IDE specific folders
